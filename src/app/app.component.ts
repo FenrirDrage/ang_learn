@@ -4,12 +4,13 @@ import { HeaderComponent } from './components/header/header.component';
 import { WelcomeContentComponent } from './components/welcome-content/welcome-content.component';
 import { ContentComponent } from './components/content/content.component';
 import { ButtonsComponent } from "./components/buttons/buttons.component";
-import { CommonModule } from '@angular/common';
+import { NgIf } from '@angular/common';
+
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HeaderComponent, WelcomeContentComponent, ContentComponent, ButtonsComponent, CommonModule],
+  imports: [RouterOutlet, HeaderComponent, WelcomeContentComponent, ContentComponent, ButtonsComponent, NgIf],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

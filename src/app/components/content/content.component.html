@@ -1,6 +1,6 @@
 <app-buttons  (loginClick)="atLogin()"
                 (logoutClick)="atLogout()"/>
 
-<app-welcome-content *NgIf="componentToShow == 'welcome'"/>
+<app-welcome-content *ngIf="componentToShow == 'welcome'"/>
 
-<app-login-form *NgIf="componentToShow == 'Login in'"/>
+<app-login-form *ngIf="componentToShow == 'login'"/>
